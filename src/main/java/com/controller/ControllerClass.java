@@ -40,7 +40,10 @@ public class ControllerClass {
 	public String display(Model m) {
 		return "index";
 	}
-
+@RequestMapping("/test")
+public String Test() {
+	return "test";
+}
 	@RequestMapping("/shopreg")
 	public String ShopReg(Model m) {
 		m.addAttribute("shop", new ShopRegister());
@@ -95,23 +98,29 @@ public class ControllerClass {
 		m.addAttribute("aaa", l1);
 		if (l1.getUsertype().equals("1")) {
 			session.setAttribute("id", l1.getShopregister().getId());
+			List<AddVehicle> li = dao.ShopViewVehicles((Integer) session.getAttribute("id"));
+			m.addAttribute("v", li);
 			return "shophome";
 		} else if (l1.getUsertype().equals("0")) {
 			session.setAttribute("id", l1.getUserreg().getId());
-			List<AddVehicle> li = dao.showVehicles();
+			List<AddVehicle> li = dao.showAvailableVehicles();
 			m.addAttribute("v", li);
+			m.addAttribute("u",l1);
 			return "UserHome";
 		} else {
 			return "index";
 		}
 	}
 
-//	@RequestMapping("/addVehicle")
-//	public String adVehicle(@ModelAttribute("addvehicle") AddVehicle av,Model m,ShopRegister s,HttpSession session) {
-//		s.setId((Integer)session.getAttribute("id"));
-//		dao.addVehicle(av, s);
-//		return "redirect:/shophome";
-//	}
+	@RequestMapping("/shopHome")
+	public String shopHome(Model m,HttpSession session) {
+		//session.setAttribute("id", l1.getShopregister().getId());
+		List<AddVehicle> li = dao.ShopViewVehicles((Integer) session.getAttribute("id"));
+		m.addAttribute("v", li);
+
+		
+		return "shophome";
+	}
 	@RequestMapping("/viewvehicle")
 	public String viewVehicle(@ModelAttribute("addvehicle") AddVehicle av, Model m, HttpSession session) {
 		List<AddVehicle> li = dao.ShopViewVehicles((Integer) session.getAttribute("id"));
@@ -161,7 +170,7 @@ public class ControllerClass {
 			return "shophome";
 		} else {
 			// System.out.println("erre");
-			return "redirect:/catForm";
+			return "shophome";
 		}
 	}
 

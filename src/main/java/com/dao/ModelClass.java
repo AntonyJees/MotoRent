@@ -76,6 +76,14 @@ public class ModelClass {
 		List<AddVehicle> list=query.list();
 		return list;
 	}
+	
+	public List<AddVehicle> showAvailableVehicles(){
+		String status = "Available";
+		org.hibernate.Query query=sessionFactory.getCurrentSession().createQuery("from AddVehicle where status='"+status+"'");
+		List<AddVehicle> list=query.list();
+		return list;
+	}
+	
 	public List<AddVehicle> view(int id){
 		org.hibernate.Query query=sessionFactory.getCurrentSession().createQuery("from AddVehicle where id='"+id+"'");
 		List<AddVehicle> list=query.list();

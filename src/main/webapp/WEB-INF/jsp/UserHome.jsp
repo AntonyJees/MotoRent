@@ -91,9 +91,11 @@
 							
 							<ul class="header-links pull-right">
 								<li>
+								
 									<h3 style="color: white; margin-top: 10px;">
-										Hi,<label style="text-transform: capitalize;">${p.userreg.firstname }</label>
+										Hi,<label style="text-transform: capitalize;">${u.userreg.firstname }</label>
 									</h3>
+									
 								</li>
 								<li><div class="dropdown">
 										<button class="btn btn-primary dropdown-toggle" type="button"

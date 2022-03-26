@@ -1,0 +1,19 @@
+.header-title{
+	font-size: 4rem;
+	color: #FF000F;
+	
+}
+.link-title{
+	font-size: 2rem;
+}
+.link-title:hover {
+	color: red;
+}
+.cards {
+    
+    width: 20%;
+   
+}
+.btns{
+	width: 100%;
+}

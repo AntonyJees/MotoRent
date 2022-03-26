@@ -1,5 +1,3 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ page isELIgnored="false"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,14 +8,6 @@
 
 <title>MotoRent</title>
 
-<!-- Google font -->
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-	rel="stylesheet">
-
-<!-- Latest compiled JavaScript -->
-<script
-	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Google font -->
 <link
 	href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700"
@@ -37,131 +27,109 @@
 
 <!-- Font Awesome Icon -->
 <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 <!-- Custom stlylesheet -->
 <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
-<link type="text/css" rel="stylesheet" href="assets/css/motorent.css" />
 
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+ 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+ 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+ 		<![endif]-->
 
 </head>
 <body>
-	<!-- HEADER -->
-	<header>
-		<!-- TOP HEADER -->
-
-		<!-- MAIN HEADER -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand header-title" href="#">Motorent</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse"
-				data-target="#navbarNav" aria-controls="navbarNav"
-				aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
 
 
-					<li class="nav-item"><a class="nav-link link-title"
-						href="shopHome">Home</a></li>
-					<li class="nav-item"><a class="nav-link link-title"
-						href="viewvehicle">View Vehicles</a></li>
-					<li class="nav-item"><a class="nav-link link-title"
-						href="viewBookings">View Bookings</a></li>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-				</ul>
-			</div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+		
 
-		</nav>
-		<!-- /MAIN HEADER -->
-	</header>
-	<!-- /HEADER -->
 
+	
 	<!-- NAVIGATION -->
+	<nav id="navigation">
+		<!-- container -->
+		<div class="container">
+			<!-- responsive-nav -->
+			<div id="responsive-nav">
+				<!-- NAV -->
+				
+				<!-- /NAV -->
+			</div>
+			<!-- /responsive-nav -->
+		</div>
+		<!-- /container -->
+	</nav>
+	<!-- /NAVIGATION -->
+
+	
 	<!-- SECTION -->
 	<div class="section">
 		<!-- container -->
 		<div class="container">
 			<!-- row -->
 			<div class="row">
-				<div class="col-md-2"></div>
-				<div class="col-md-8">
-					<!-- Billing Details -->
-					<div class="billing-details">
-						<div class="section-title">
-							<h3 class="title">Add Vehicle</h3>
-						</div>
-						<form action="addVehicle" method="post"
-							enctype="multipart/form-data">
-							<div class="form-group">
-								<input class="input" type="text" name="companyName"
-									placeholder="Company Name">
-							</div>
-							<div class="form-group">
-								<input class="input" type="text" name="vehicleName"
-									placeholder="Vehicle Name">
-							</div>
-							<div class="form-group">
-								<input class="input" type="yext" name="model"
-									placeholder="Model">
-							</div>
-							<div class="form-group">
-								<select class="form-control" name="type"
-									id="exampleFormControlSelect1">
-									<option>Vehicle Type</option>
-									<option>Car</option>
-									<option>Bikes</option>
-									<option>Scooter</option>
-									<option>XUV</option>
-								</select>
-							</div>
-							<div class="form-group">
-								<input class="input" type="text" name="manufactureYear"
-									placeholder="Manufacture Year">
-							</div>
-							<div class="form-group">
-								<input class="input" type="text" name="distance"
-									placeholder="Distance Travelled">
-							</div>
-							<div class="form-group">
-								<input class="input" type="text" name="vehicleNo"
-									placeholder="Vehicle No">
-							</div>
-							<div class="form-group">
-								<input class="input" type="text" name="cost"
-									placeholder="Cost/Day">
-							</div>
-							<div class="form-group">
-								<select class="form-control" name="status"
-									id="exampleFormControlSelect1">
-
-									<option>Status</option>
-									<option>available</option>
-									<option>not available</option>
-
-								</select>
-							</div>
-							<div class="form-group">
-								<input class="input" type="file" name="image"
-									placeholder="Image">
-							</div>
-							<div class="form-group">
-								<input class="input" type="submit" value="Add">
-							</div>
-						</form>
-					</div>
-					<div class="col-md-2"></div>
-				</div>
+			
+			<section id="home">
+        <div class="inner-width">
+          <div class="content">
+            <h1>Welcome to MotoRent </h1>
+            <div class="sm">
+             <h3>Login To Find The Vehicle </h3>
+            </div>
+          </div>
+        </div>
 			</div>
+			<!-- /row -->
 		</div>
-
-
-		
+		<!-- /container -->
 	</div>
-	<!-- /NAVIGATION -->
+	<!-- /SECTION -->
 
-
-
-
+	
 
 	<!-- FOOTER -->
 	<footer id="footer">
@@ -231,6 +199,28 @@
 			<!-- /container -->
 		</div>
 		<!-- /top footer -->
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 		<!-- bottom footer -->
 		<div id="bottom-footer" class="section">
@@ -249,11 +239,12 @@
 						<span class="copyright"> <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 							Copyright &copy;<script>
 								document.write(new Date().getFullYear());
-							</script>
-							All rights reserved | This template is made with <i
+							</script> All rights reserved | This template is made with <i
 							class="fa fa-heart-o" aria-hidden="true"></i> by <a
 							href="https://colorlib.com" target="_blank">Colorlib</a> <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						</span>
+
+
 					</div>
 				</div>
 				<!-- /row -->

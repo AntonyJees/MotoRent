@@ -133,6 +133,9 @@
 						<div class="col-md-6">
 							<h4 class="card-title">${v.manufactureYear}Model</h4>
 						</div>
+						<div class="col-md-6">
+							<h4 class="card-title">${v.status}</h4>
+						</div>
 						<div class="col-md-7">
 							<label>Kilometer:</label>
 							<h3>${v.distance}KM</h3>

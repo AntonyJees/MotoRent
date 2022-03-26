@@ -39,8 +39,13 @@ import javax.persistence.Table;
 			private ShopRegister shopregister;
 			
 			@OneToOne(cascade = CascadeType.ALL)  
+			@JoinColumn(name="shopid") 
+			private ShopRegister shopreg;
+			
+			@OneToOne(cascade = CascadeType.ALL)  
 			@JoinColumn(name="userid") 
 			private UserReg userreg;
+			
 			public UserReg getUserreg() {
 				return userreg;
 			}

@@ -14,6 +14,12 @@
 }
 </style>
 <!-- Google font -->
+<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Google font -->
 <link
 	href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700"
 	rel="stylesheet">
@@ -35,74 +41,39 @@
 
 <!-- Custom stlylesheet -->
 <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/motorent.css" />
 
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
 
 </head>
 <body>
 	<!-- HEADER -->
 	<header>
 		<!-- MAIN HEADER -->
-		<div id="header">
-			<!-- container -->
-			<div class="container">
-				<!-- row -->
-				<div class="row">
-					<!-- LOGO -->
-					<div class="col-md-3">
-						<div class="header-logo">
-							<h1>MotoRent</h1>
-						</div>
-
-					</div>
-					<!-- /LOGO -->
-
-					<ul class="header-links pull-right">
-
-						<li>
-							<div class="dropdown">
-								<button class="btn btn-primary dropdown-toggle" type="button"
-									data-toggle="dropdown">
-									My Account <span class="caret"></span>
-								</button>
-								<ul class="dropdown-menu" style="color: #2B2D42;">
-									<li><a href="userSignUp">User SignUp></li>
-									<li><a href="signin">SignIn</a></li>
-								</ul>
-							</div>
-						</li>
-					</ul>
-
-
-				</div>
-				<!-- row -->
-			</div>
-			<!-- container -->
-		</div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand header-title" href="#">Motorent</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      
+     
+      <li class="nav-item">
+        <a class="nav-link link-title" href="userSignUp">User SignUp</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link link-title" href="signin">SignIn</a>
+      </li>
+      
+    </ul>
+  </div>
+  
+</nav>
 		<!-- /MAIN HEADER -->
 	</header>
 	<!-- /HEADER -->
 
-	<!-- NAVIGATION -->
-	<nav id="navigation">
-		<!-- container -->
-		<div class="container">
-			<!-- responsive-nav -->
-			<div id="responsive-nav">
-				
-				<!-- /NAV -->
-			</div>
-			<!-- /responsive-nav -->
-		</div>
-		<!-- /container -->
-	</nav>
-	<!-- /NAVIGATION -->
-
+	
 	
 
 	<!-- SECTION -->
@@ -116,7 +87,7 @@
 					<!-- Billing Details -->
 					<div class="billing-details">
 						<div class="section-title">
-							<h3 class="title">Register</h3>
+							<h3 class="title ">Register</h3>
 						</div>
 
 
@@ -180,11 +151,7 @@
 		</div>
 
 
-		<!-- Order notes -->
-		<div class="order-notes">
-			<textarea class="input" placeholder="Order Notes"></textarea>
-		</div>
-		<!-- /Order notes -->
+		
 	</div>
 
 
