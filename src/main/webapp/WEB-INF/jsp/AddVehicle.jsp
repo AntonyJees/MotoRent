@@ -50,7 +50,7 @@
 		<!-- TOP HEADER -->
 
 		<!-- MAIN HEADER -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar navbar-expand-lg navbar-light bg-danger">
 			<a class="navbar-brand header-title" href="#">Motorent</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
 				data-target="#navbarNav" aria-controls="navbarNav"
@@ -63,11 +63,14 @@
 
 					<li class="nav-item"><a class="nav-link link-title"
 						href="shopHome">Home</a></li>
-					<li class="nav-item"><a class="nav-link link-title"
-						href="viewvehicle">View Vehicles</a></li>
+				<!--  	<li class="nav-item"><a class="nav-link link-title"
+						href="viewvehicle">View Vehicles</a></li> -->
 					<li class="nav-item"><a class="nav-link link-title"
 						href="viewBookings">View Bookings</a></li>
-
+<li class="nav-item"><a class="nav-link link-title"
+						href="shopprofile">Profile</a></li>
+						<li class="nav-item"><a class="nav-link link-title"
+						href="logout">SignOut</a></li>
 				</ul>
 			</div>
 

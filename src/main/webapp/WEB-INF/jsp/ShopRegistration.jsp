@@ -49,7 +49,7 @@
 	<!-- HEADER -->
 	<header>
 		<!-- MAIN HEADER -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar navbar-expand-lg navbar-light bg-danger">
   <a class="navbar-brand header-title" href="#">Motorent</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -191,11 +191,11 @@
 						<div class="footer">
 							<h3 class="footer-title">Categories</h3>
 							<ul class="footer-links">
-								<li><a href="#">Hot deals</a></li>
-								<li><a href="#">Laptops</a></li>
-								<li><a href="#">Smartphones</a></li>
-								<li><a href="#">Cameras</a></li>
-								<li><a href="#">Accessories</a></li>
+								<li><a href="#">Bikes</a></li>
+								<li><a href="#">Cars</a></li>
+								<li><a href="#">XUV</a></li>
+								<li><a href="#">Scooter</a></li>
+								
 							</ul>
 						</div>
 					</div>

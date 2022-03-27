@@ -79,7 +79,7 @@ public class ModelClass {
 	
 	public List<AddVehicle> showAvailableVehicles(){
 		String status = "Available";
-		org.hibernate.Query query=sessionFactory.getCurrentSession().createQuery("from AddVehicle where status='"+status+"'");
+		org.hibernate.Query query=sessionFactory.getCurrentSession().createQuery("from AddVehicle");
 		List<AddVehicle> list=query.list();
 		return list;
 	}
@@ -141,5 +141,11 @@ public class ModelClass {
 	public void CancelOrder(int id) {
 		org.hibernate.Query query=sessionFactory.getCurrentSession().createQuery("delete from Bookings where id='"+id+"'");
 		query.executeUpdate();
+	}
+	public List<Login> findUser(int id){
+		int type=0;
+		org.hibernate.Query query=sessionFactory.getCurrentSession().createQuery("from Login where id='"+id+"' and usertype='"+type+"'");
+		List<Login> li = query.list();
+		return li;
 	}
 }

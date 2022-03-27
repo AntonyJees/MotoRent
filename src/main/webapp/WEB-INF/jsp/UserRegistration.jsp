@@ -49,7 +49,7 @@
 		<!-- TOP HEADER -->
 
 		<!-- MAIN HEADER -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar navbar-expand-lg navbar-light bg-danger">
   <a class="navbar-brand header-title" href="#">Motorent</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -59,7 +59,7 @@
       
      
       <li class="nav-item">
-        <a class="nav-link link-title" href="userSignUp">Shop SignUp</a>
+        <a class="nav-link link-title" href="shopSignUp">Shop SignUp</a>
       </li>
       <li class="nav-item">
         <a class="nav-link link-title" href="signin">SignIn</a>

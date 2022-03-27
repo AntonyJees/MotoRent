@@ -11,6 +11,15 @@
 <title>MotoRent</title>
 
 <!-- Google font -->
+<!-- Google font -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Google font -->
 <link
 	href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700"
 	rel="stylesheet">
@@ -32,112 +41,50 @@
 
 <!-- Custom stlylesheet -->
 <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
-
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
+<link type="text/css" rel="stylesheet" href="./assets/css/motorent.css" />
 
 </head>
 <body>
 	<!-- HEADER -->
-	<header>
-		<!-- TOP HEADER -->
-
-		<!-- MAIN HEADER -->
-		<div id="header">
-			<!-- container -->
-			<div class="container">
-				<!-- row -->
-				<div class="row">
-					<!-- LOGO -->
-					<div class="col-md-3">
-						<div class="header-logo">
-							<h1 style="color: white;margin-top: 20px;">MotoRent</h1>
-							</a>
-						</div>
-					</div>
-					<!-- /LOGO -->
-
-					<!-- SEARCH BAR -->
-					<div class="col-md-6">
-						<div class="header-search">
-							<form action="vehicleSearch" enctype="multipart/form-data">
-								<select name="type" class="input-select">
-									<option value="0">All Categories</option>
-									<option>Car</option>
-									<option>Bikes</option>
-									<option>Scooter</option>
-									<option>XUV</option>
-								</select> <input class="input" name="search" placeholder="Search here">
-								<button class="search-btn">Search</button>
-							</form>
-						</div>
-					</div>
-					<!-- /SEARCH BAR -->
-
-					<!-- ACCOUNT -->
-					<div class="col-md-3 clearfix">
-						<div class="header-ctn">
-							<!-- Wishlist -->
-							<!-- Menu Toogle -->
-							<div class="menu-toggle">
-								<a href="#"> <i class="fa fa-bars"></i> <span>Menu</span>
-								</a>
-							</div>
-							<!-- /Menu Toogle -->
-							
-							<ul class="header-links pull-right">
-								<li>
-									<h3 style="color: white; margin-top: 10px;">
-										Hi,<label style="text-transform: capitalize;">${p.userreg.firstname }</label>
-									</h3>
-								</li>
-								<li><div class="dropdown">
-										<button class="btn btn-primary dropdown-toggle" type="button"
-											data-toggle="dropdown">
-											My Account <span class="caret"></span>
-										</button>
-										<ul class="dropdown-menu" style="color: #2B2D42;">
-											<li><a href="userprofile">Profile</a></li>
-											<li><a href="logout">Sign Out</a></li>
-										</ul>
-									</div></li>
-							</ul>
-
-						</div>
-					</div>
-					<!-- /ACCOUNT -->
-				</div>
-				<!-- row -->
-			</div>
-			<!-- container -->
-		</div>
-		<!-- /MAIN HEADER -->
-	</header>
-	<!-- /HEADER -->
-
-	<!-- NAVIGATION -->
-	<nav id="navigation">
-		<!-- container -->
-		<div class="container">
-			<!-- responsive-nav -->
-			<div id="responsive-nav">
-				<!-- NAV -->
-				<ul class="main-nav nav navbar-nav">
-					<li class="active"><a href="userHome">Home</a></li>
-					
-					<li><a href="#">My Orders</a></li>
-				</ul>
-				<!-- /NAV -->
-			</div>
-			<!-- /responsive-nav -->
-		</div>
-		<!-- /container -->
-	</nav>
-	<!-- /NAVIGATION -->
+	
+	
+	
+	
+	<nav class="navbar navbar-expand-lg navbar-light bg-danger">
+  <a class="navbar-brand fs-1 text" href="#">MotoRent</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link fs-3 text" href="userHomes">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fs-3 text" href="userOrders">My Bookings</a>
+      </li>
+     
+      <li class="nav-item dropdown">
+        <a class="nav-link fs-3 text dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         My Account
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="userprofile">Profile</a>
+          <a class="dropdown-item" href="logout">SignOut</a>
+         
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+	
+	
+	
+	
+	
+	
+	
+	
 
 
 

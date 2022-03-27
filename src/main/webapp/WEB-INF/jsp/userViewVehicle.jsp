@@ -12,149 +12,75 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <!-- Google font -->
+<!-- Google font -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Google font -->
 <link
 	href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700"
 	rel="stylesheet">
 
 <!-- Bootstrap -->
 <link type="text/css" rel="stylesheet"
-	href="<c:url value = "../assets/css/bootstrap.min.css"/>" />
+	href="assets/css/bootstrap.min.css" />
 
 <!-- Slick -->
-<link type="text/css" rel="stylesheet"
-	href="<c:url value = "../assets/css/slick.css"/>" />
-<link type="text/css" rel="stylesheet"
-	href="<c:url value = "../assets/css/slick-theme.css"/>" />
+<link type="text/css" rel="stylesheet" href="assets/css/slick.css" />
+<link type="text/css" rel="stylesheet" href="assets/css/slick-theme.css" />
 
 <!-- nouislider -->
 <link type="text/css" rel="stylesheet"
-	href="<c:url value = "../assets/css/nouislider.min.css"/>" />
+	href="assets/css/nouislider.min.css" />
 
 <!-- Font Awesome Icon -->
-<link rel="stylesheet"
-	href="<c:url value = "../assets/css/font-awesome.min.css"/>">
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
 <!-- Custom stlylesheet -->
-<link type="text/css" rel="stylesheet"
-	href="<c:url value = "../assets/css/style.css"/>" />
-
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
- 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
- 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
- 		<![endif]-->
+<link type="text/css" rel="stylesheet" href="../assets/css/style.css" />
+<link type="text/css" rel="stylesheet" href="../assets/css/motorent.css" />
 
 </head>
 <body>
 	<!-- HEADER -->
-	<header>
-		
-
-		<!-- MAIN HEADER -->
-		<div id="header">
-			<!-- container -->
-			<div class="container">
-				<!-- row -->
-				<div class="row">
-					<!-- LOGO -->
-					<div class="col-md-3">
-						<div class="header-logo">
-							<h1 style="color: white;margin-top: 20px;">MotoRent</h1>
-							</a>
-						</div>
-					</div>
-					<!-- /LOGO -->
-
-					<!-- SEARCH BAR -->
-					<div class="col-md-6">
-						<div class="header-search">
-							<form>
-								<select class="input-select">
-									<option value="0">All Categories</option>
-									<option value="1">Category 01</option>
-									<option value="1">Category 02</option>
-								</select> <input class="input" placeholder="Search here">
-								<button class="search-btn">Search</button>
-							</form>
-						</div>
-					</div>
-					<!-- /SEARCH BAR -->
-
-					<!-- ACCOUNT -->
-					<div class="col-md-3 clearfix">
-						<div class="header-ctn">
-							<!-- Wishlist -->
-							<!-- Menu Toogle -->
-							<div class="menu-toggle">
-								<a href="#"> <i class="fa fa-bars"></i> <span>Menu</span>
-								</a>
-							</div>
-							<!-- /Menu Toogle -->
-							<ul class="header-links pull-right">
-								
-								<li><div class="dropdown">
-										<button class="btn btn-primary dropdown-toggle" type="button"
-											data-toggle="dropdown">
-											My Account <span class="caret"></span>
-										</button>
-										<ul class="dropdown-menu" style="color: #2B2D42;">
-											<li><a href="userSignUp">Profile</a></li>
-											<li><a href="logout">Sign Out</a></li>
-										</ul>
-									</div></li>
-							</ul>
-
-						</div>
-					</div>
-					<!-- /ACCOUNT -->
-				</div>
-				<!-- row -->
-			</div>
-			<!-- container -->
-		</div>
-		<!-- /MAIN HEADER -->
-	</header>
-	<!-- /HEADER -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-danger">
+  <a class="navbar-brand fs-1 text" href="#">MotoRent</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link fs-3 text" href="../userHomes">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fs-3 text" href="../userOrders">My Bookings</a>
+      </li>
+     
+      <li class="nav-item dropdown">
+        <a class="nav-link fs-3 text dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         My Account
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="../userprofile">Profile</a>
+          <a class="dropdown-item" href="../logout">SignOut</a>
+         
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
 
 	<!-- NAVIGATION -->
-	<nav id="navigation">
-		<!-- container -->
-		<div class="container">
-			<!-- responsive-nav -->
-			<div id="responsive-nav">
-				<!-- NAV -->
-				<ul class="main-nav nav navbar-nav">
-					<li class="active"><a href="../userHome">Home</a></li>
-					
-					<li><a href="../userOrders">My Orders</a></li>
-				</ul>
-				<!-- /NAV -->
-			</div>
-			<!-- /responsive-nav -->
-		</div>
-		<!-- /container -->
-	</nav>
+	
 	<!-- /NAVIGATION -->
 
 	<!-- BREADCRUMB -->
-	<div id="breadcrumb" class="section">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-				<div class="col-md-12">
-					<h3 class="breadcrumb-header">Regular Page</h3>
-					<ul class="breadcrumb-tree">
-						<li><a href="#">Home</a></li>
-						<li class="active">Blank</li>
-					</ul>
-				</div>
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-	</div>
+	
 	<!-- /BREADCRUMB -->
 
 	<!-- SECTION -->
@@ -164,16 +90,16 @@
 			<!-- container -->
 			<div class="container">
 				<!-- row -->
-				<div class="row">
+				<div class="row border p-3 border-danger">
 					<!-- Product main img -->
 					
 					
 					<!-- /Product main img -->
 
 					<!-- Product thumb imgs -->
-					<div class="col-md-2  col-md-5"  style="float: left;">
+					<div class=" col-md-5">
 						<div>
-							<div style="margin-top: 50px;">
+							<div>
 							
 							<img src="../images/${v.image }" class="" alt="..." width="572px" height="360px">	
 							</div>
@@ -184,7 +110,7 @@
 					<!-- /Product thumb imgs -->
 
 					<!-- Product details -->
-					<div class="col-md-5" style="float: right;">
+					<div class="col-md-5 p-5 ml-1">
 						<div class="product-details">
 							<h2 class="product-name">${v.companyName}&nbsp;${v.vehicleName}&nbsp;${v.model}</h2>
 							
@@ -200,82 +126,22 @@
 									<h4 class="product-price" style="color: black;">Vehicle No:</h4>
 								<h3 class="product-price">${v.vehicleNo }</h3>
 							</div>
-							
-
-							
-
 							<div class="add-to-cart">
 								
-								<a  href="../book/${v.id}" class="add-to-cart-btn">Book</a>
+								<a  href="../book/${v.id}" class="btn btn-outline-danger">Book</a>
 							</div>
- 						<ul class="product-btns">
-								<li><a href="#"><i class="fa fa-heart-o"></i> add to wishlist</a></li>
-								<li><a href="#"><i class="fa fa-exchange"></i> add to compare</a></li>
-							</ul>
 
-							<ul class="product-links">
-								<li>Category:</li>
-								<li><a href="#">Headphones</a></li>
-								<li><a href="#">Accessories</a></li>
-							</ul>
+							
 
-							<ul class="product-links">
-								<li>Share:</li>
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-								<li><a href="#"><i class="fa fa-envelope"></i></a></li>
-							</ul>
+							
+ 						
 
 						</div>
 					</div>
 					<!-- /Product details -->
 
 					<!-- Product tab -->
-					<div class="col-md-12">
-						<div id="product-tab">
-							<!-- product tab nav -->
-							<ul class="tab-nav">
-								<li class="active"><a data-toggle="tab" href="#tab1">Description</a></li>
-								<li><a data-toggle="tab" href="#tab2">Details</a></li>
-								<li><a data-toggle="tab" href="#tab3">Reviews (3)</a></li>
-							</ul>
-							<!-- /product tab nav -->
-
-							<!-- product tab content -->
-							<div class="tab-content">
-								<!-- tab1  -->
-								<div id="tab1" class="tab-pane fade in active">
-									<div class="row">
-										<div class="col-md-12">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-										</div>
-									</div>
-								</div>
-								<!-- /tab1  -->
-
-								<!-- tab2  -->
-								<div id="tab2" class="tab-pane fade in">
-									<div class="row">
-										<div class="col-md-12">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-										</div>
-									</div>
-								</div>
-								<!-- /tab2  -->
-
-								<!-- tab3  -->
-								<div id="tab3" class="tab-pane fade in">
-									<div class="row">
-										
-																		</div>
-								</div>
-								<!-- /tab3  -->
-							</div>
-							<!-- /product tab content  -->
-						</div>
-					</div>
-					<!-- /product tab -->
+					
 				</div>
 				<!-- /row -->
 			</div>
@@ -393,12 +259,12 @@
 	<!-- /FOOTER -->
 
 	<!-- jQuery Plugins -->
-	<script src="<c:url value = "../assets/js/jquery.min.js"/>"></script>
-	<script src="<c:url value = "../assets/js/bootstrap.min.js"/>"></script>
-	<script src="<c:url value = "../assets/js/slick.min.js"/>"></script>
-	<script src="<c:url value = "../assets/js/nouislider.min.js"/>"></script>
-	<script src="<c:url value = "../assets/js/jquery.zoom.min.js"/>"></script>
-	<script src="<c:url value = "../assets/js/main.js"/>"></script>
+	<script src="assets/js/jquery.min.js"></script>
+			<script src="../assets/js/bootstrap.min.js"></script>
+			<script src="../assets/js/slick.min.js"></script>
+			<script src="../assets/js/nouislider.min.js"></script>
+			<script src="../assets/js/jquery.zoom.min.js"></script>
+			<script src="../assets/js/main.js"></script>
 <script type="text/javascript">
         function GetDays(){
                 var dropdt = new Date(document.getElementById("drop_date").value);

@@ -11,9 +11,12 @@
 }
 .cards {
     
-    width: 20%;
+    width: 30%;
    
 }
 .btns{
 	width: 100%;
+}
+.login-sidebar{
+	font-size: 4rem;
 }

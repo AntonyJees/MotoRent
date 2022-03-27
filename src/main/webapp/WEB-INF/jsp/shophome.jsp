@@ -40,7 +40,7 @@
 
 <!-- Custom stlylesheet -->
 <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
-<link type="text/css" rel="stylesheet" href="assets/css/motorent.css" />
+<link type="text/css" rel="stylesheet" href="./assets/css/motorent.css" />
 
 
 </head>
@@ -50,7 +50,7 @@
 		<!-- TOP HEADER -->
 
 		<!-- MAIN HEADER -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar navbar-expand-lg navbar-light bg-danger">
 			<a class="navbar-brand header-title" href="#">Motorent</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
 				data-target="#navbarNav" aria-controls="navbarNav"
@@ -63,11 +63,14 @@
 
 					<li class="nav-item"><a class="nav-link link-title"
 						href="addvehicle">Add Vehicle</a></li>
-					<li class="nav-item"><a class="nav-link link-title"
-						href="viewvehicle">View Vehicles</a></li>
+			<!-- 		<li class="nav-item"><a class="nav-link link-title"
+						href="viewvehicle">View Vehicles</a></li>   -->
 					<li class="nav-item"><a class="nav-link link-title"
 						href="viewBookings">View Bookings</a></li>
-
+<li class="nav-item"><a class="nav-link link-title"
+						href="shopprofile">Profile</a></li>
+						<li class="nav-item"><a class="nav-link link-title"
+						href="logout">SignOut</a></li>
 				</ul>
 			</div>
 
@@ -79,7 +82,7 @@
 	<!-- NAVIGATION -->
 	<div class="row">
 		<c:forEach var="v" items="${v}">
-			<div class="col-md-3 col-sm-12 col-md-xl-3">
+			<div class="col-md-3 col-sm-12 col-md-xl-3" style="; ">
 	<div class="card">
   <img src="images/${v.image}" class="card-img-top" alt="...">
   <div class="card-body">
@@ -90,7 +93,7 @@
     <h4 class="card-title col-md-6">${v.vehicleNo}</h4>
      <h4 class="card-title col-md-6">${v.status}</h4> 
     </div>
-   <a href="EditVehicle/${v.id}" class="btn btns btn-primary">Edit</a>
+   <a href="EditVehicle/${v.id}" class="btn btns btn-danger">Edit</a>
     
   </div>
 </div>

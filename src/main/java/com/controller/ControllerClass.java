@@ -121,6 +121,19 @@ public String Test() {
 		
 		return "shophome";
 	}
+	@RequestMapping("/userHomes")
+	public String userHome(Model m,HttpSession session) {
+		//session.setAttribute("id", l1.getShopregister().getId());
+		//session.setAttribute("id", l1.getUserreg().getId());
+		int id = (Integer)session.getAttribute("id");
+		List<Login> li = dao.getUserProfile(id);
+		List<AddVehicle> l1 = dao.showAvailableVehicles();
+		Login l = li.get(0);
+		m.addAttribute("v", l1);
+		m.addAttribute("u",l);
+		
+		return "UserHome";
+	}
 	@RequestMapping("/viewvehicle")
 	public String viewVehicle(@ModelAttribute("addvehicle") AddVehicle av, Model m, HttpSession session) {
 		List<AddVehicle> li = dao.ShopViewVehicles((Integer) session.getAttribute("id"));
@@ -167,10 +180,10 @@ public String Test() {
 		av.setShopregister(sr);
 		int i = dao.addVehicle(av);
 		if (i > 0) {
-			return "shophome";
+			return "redirect:/shopHome";
 		} else {
 			// System.out.println("erre");
-			return "shophome";
+			return "redirect:/shopHome";
 		}
 	}
 
@@ -189,7 +202,7 @@ public String Test() {
 		int id = (Integer) session.getAttribute("vid");
 		System.out.println(id);
 		dao.updateVehicle(av, id);
-		return "shophome";
+		return "redirect:/shopHome";
 	}
 
 	@RequestMapping(value = "/logout")
@@ -285,7 +298,7 @@ public String Test() {
 	public String USerProfile(Model m, HttpSession session) {
 		int id = (Integer) session.getAttribute("id");
 		List<Login> list = dao.getUserProfile(id);
-		// System.out.println(list.get(0).getFirstname()+" hello");
+		// System.out.println(list.get(0).getShopregister().getShopname()+" hello");
 		m.addAttribute("p", list.get(0));
 		return "UserProfileEdit";
 	}

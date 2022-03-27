@@ -44,11 +44,35 @@
 <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
 <link type="text/css" rel="stylesheet" href="assets/css/motorent.css" />
 </head>
+<style>
+.login-sidebar{
+font-size: 4rem;
+display:flex;
+align-content: center;
+justify-content: center;
+
+
+}
+.login-sidebar-content{
+font-size: 3rem;
+padding:3rem;
+color: red;
+}
+.side-bar{
+border-right-style: solid;
+
+}
+.col-md-6{
+padding: 2rem;
+margin-top: 2rem;
+margin-bottom: 2rem;
+}
+</style>
 <body>
 	<!-- HEADER -->
 	<header>
 		<!-- MAIN HEADER -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar navbar-expand-lg navbar-light bg-danger">
   <a class="navbar-brand header-title" href="#">Motorent</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -58,10 +82,10 @@
       
      
       <li class="nav-item">
-        <a class="nav-link link-title" href="userSignUp">User SignUp</a>
+        <a class="nav-link link-title" href="userSignUp">UserSignUp</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link link-title" href="signin">SignIn</a>
+        <a class="nav-link link-title" href="shopSignUp">ShopSignUp</a>
       </li>
       
     </ul>
@@ -78,7 +102,20 @@
 		<div class="container">
 			<!-- row -->
 			<div class="row">
-				<div class="col-md-3"></div>
+				<div class="col-md-6">
+				<div class="side-bar">
+				<div class="login-sidebar p-1">
+				Welcome
+				<br> 
+				To
+				 <br>
+				 MotoRent
+				</div>
+				<div class="login-sidebar-content text-danger">
+				Find The Vehicles You Want
+				</div>
+				</div>
+				</div>
 				<div class="col-md-6">
 					<!-- Billing Details -->
 					<div class="billing-details">
@@ -96,11 +133,12 @@
 									placeholder="Password">
 							</div>
 							<div class="form-group">
-								<input class="input" type="submit" value="Sign In">
+							<!-- 	<input class="input btn-danger" type="submit" value="Sign In">   -->
+								<button type="submit" class="btn btn-danger">SignIn</button>
 							</div>
 						</form>
 					</div>
-					<div class="col-md-3"></div>
+					
 				</div>
 			</div>
 		</div>

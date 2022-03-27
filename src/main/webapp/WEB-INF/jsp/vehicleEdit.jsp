@@ -50,7 +50,7 @@
 		<!-- TOP HEADER -->
 
 		<!-- MAIN HEADER -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar navbar-expand-lg navbar-light bg-danger">
 			<a class="navbar-brand header-title" href="#">Motorent</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
 				data-target="#navbarNav" aria-controls="navbarNav"
@@ -60,14 +60,18 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
 
-
+<li class="nav-item"><a class="nav-link link-title"
+						href="../shopHome">Home</a></li>
 					<li class="nav-item"><a class="nav-link link-title"
 						href="../addvehicle">Add Vehicle</a></li>
-					<li class="nav-item"><a class="nav-link link-title"
-						href="../viewvehicle">View Vehicles</a></li>
+		<!-- 		<li class="nav-item"><a class="nav-link link-title"
+						href="../viewvehicle">View Vehicles</a></li>   -->	
 					<li class="nav-item"><a class="nav-link link-title"
 						href="../viewBookings">View Bookings</a></li>
-
+<li class="nav-item"><a class="nav-link link-title"
+						href="shopprofile">Profile</a></li>
+						<li class="nav-item"><a class="nav-link link-title"
+						href="logout">SignOut</a></li>
 				</ul>
 			</div>
 
@@ -137,7 +141,7 @@
 								</select>
 							</div>
 							<div class="form-group p-2">
-								<input class="input" type="submit" value="Add">
+								<button class=" btn-outline-danger btn-lg " type="submit" >Edit</button>
 							</div>
 						</form>
 					</div>
